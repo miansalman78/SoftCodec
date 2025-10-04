@@ -95,10 +95,7 @@ body {
         height: 100% !important;
     }
     
-    .floating-3d-model {
-        height: 40vh !important;
-        position: relative !important;
-    }
+
     
     .content-wrapper {
         overflow-y: visible !important;
@@ -284,21 +281,7 @@ body {
 }
 
 /* 3D Model styling */
-.floating-3d-model {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Place behind content */
-    pointer-events: none; /* Allow clicks to pass through to elements below */
-}
 
-#contact-3d-canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
 
 /* Add a subtle gradient overlay to ensure content remains readable */
 .content-wrapper {
