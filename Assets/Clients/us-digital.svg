@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="50">
+  <style>
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+    .us { fill: #2980b9; }
+    .digital { fill: #c0392b; }
+    .tagline { font-size: 10px; fill: #7f8c8d; }
+  </style>
+  <g transform="translate(10, 30)">
+    <text class="text us" font-size="18">US</text>
+    <text class="text digital" font-size="18" x="35">Digital</text>
+    <text class="tagline" x="20" y="15">Innovation Hub</text>
+    <rect x="5" y="-20" width="20" height="15" fill="none" stroke="#2980b9" stroke-width="2"/>
+    <line x1="5" y1="-12.5" x2="25" y2="-12.5" stroke="#c0392b" stroke-width="1"/>
+  </g>
+</svg>

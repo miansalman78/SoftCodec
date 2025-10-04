@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - SoftCodec</title>
+    <meta name="description" content="Explore SoftCodec's comprehensive range of services including App Development, Website Development, Digital Marketing, UI/UX Design, AI/ML Solutions, and QA & Testing.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/Logo/Fav Icon.png" type="image/png" sizes="96x96">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/services-custom.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body class="light-mode">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="Assets/Logo/Icon.png" alt="SoftCodec Logo">
+                <span>SoftCodec</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive digital solutions tailored to your business needs</p>
+        </div>
+    </section>
+
+    <!-- Services Introduction -->
+    <section class="services-intro">
+        <div class="container">
+            <div class="intro-content">
+                <p>At SoftCodec, we offer a wide range of digital services designed to help businesses thrive in the digital age. Our team of experts combines technical expertise with creative thinking to deliver solutions that drive growth, efficiency, and innovation.</p>
+                <p>Whether you need a custom mobile application, a responsive website, or a comprehensive digital marketing strategy, we have the skills and experience to bring your vision to life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- App Development -->
+                <div class="service-card-detailed">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>App Development</h3>
+                    <p>We create native and cross-platform mobile applications that deliver exceptional user experiences across all devices.</p>
+                    <ul class="service-features">
+                        <li>iOS & Android Development</li>
+                        <li>Cross-Platform Solutions</li>
+                        <li>Progressive Web Apps</li>
+                        <li>App Maintenance & Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline service-btn">Learn More</a>
+                </div>
+
+                <!-- Website Development -->
+                <div class="service-card-detailed">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>We build responsive, fast-loading websites that engage visitors and drive conversions.</p>
+                    <ul class="service-features">
+                        <li>Custom Web Development</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Content Management Systems</li>
+                        <li>Web Application Development</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline service-btn">Learn More</a>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="service-card-detailed">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>We help businesses reach their target audience and achieve their marketing goals through strategic digital campaigns.</p>
+                    <ul class="service-features">
+                        <li>Search Engine Optimization</li>
+                        <li>Social Media Marketing</li>
+                        <li>Content Marketing</li>
+                        <li>Email Marketing</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline service-btn">Learn More</a>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="service-card-detailed">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>We create intuitive, user-centered designs that enhance user satisfaction and engagement.</p>
+                    <ul class="service-features">
+                        <li>User Research & Testing</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Visual Design</li>
+                        <li>Interaction Design</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline service-btn">Learn More</a>
+                </div>
+
+                <!-- AI/ML Solutions -->
+                <div class="service-card-detailed">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI/ML Solutions</h3>
+                    <p>We develop intelligent systems that learn and adapt to your business needs, providing valuable insights and automation.</p>
+                    <ul class="service-features">
+                        <li>Machine Learning Models</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>Predictive Analytics</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline service-btn">Learn More</a>
+                </div>
+
+                <!-- QA & Testing -->
+                <div class="service-card-detailed">
+                    <div class="service-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>QA & Testing</h3>
+                    <p>We ensure your digital products meet the highest quality standards through comprehensive testing and quality assurance.</p>
+                    <ul class="service-features">
+                        <li>Functional Testing</li>
+                        <li>Performance Testing</li>
+                        <li>Security Testing</li>
+                        <li>Automated Testing</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline service-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Process</h2>
+                <p>How we bring your ideas to life</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>We start by understanding your business, goals, and requirements through in-depth consultations.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Planning</h3>
+                        <p>We create a detailed project plan, including timelines, milestones, and deliverables.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Design</h3>
+                        <p>Our designers create wireframes and visual designs that align with your brand and user needs.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>Our developers bring the designs to life using the latest technologies and best practices.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Testing</h3>
+                        <p>We rigorously test the solution to ensure it meets quality standards and functions as expected.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Launch</h3>
+                        <p>We deploy the solution and provide training and support to ensure a smooth transition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technologies We Use</h2>
+                <p>Cutting-edge tools and frameworks for optimal results</p>
+            </div>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Mobile</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fab fa-android"></i>
+                            <span>Android</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-apple"></i>
+                            <span>iOS</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-react"></i>
+                            <span>React Native</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-mobile-screen"></i>
+                            <span>Flutter</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database Category -->
+                <div class="tech-category">
+                    <h3>Database</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-server"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-cube"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Graphic Design Category -->
+                <div class="tech-category">
+                    <h3>Graphic Design</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fas fa-bezier-curve"></i>
+                            <span>Adobe Illustrator</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-image"></i>
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-pen-nib"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-palette"></i>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- UI/UX Category -->
+                <div class="tech-category">
+                    <h3>UI/UX Design</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <span>Sketch</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Adobe XD</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                            <span>InVision</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-sitemap"></i>
+                            <span>Axure RP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Digital Marketing Category -->
+                <div class="tech-category">
+                    <h3>Digital Marketing</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <i class="fab fa-google"></i>
+                            <span>Google Ads</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Google Analytics</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook Ads</span>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="fas fa-mail-bulk"></i>
+                            <span>Mailchimp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Contact us today to discuss how we can help bring your ideas to life</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="Assets/Logo/Icon.png" alt="SoftCodec Logo">
+                    <h3>SoftCodec</h3>
+                    <p>Innovating the Future with Technology</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="careers.html">Careers</a>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <h4>Contact</h4>
+                        <a href="contact.html">Get in Touch</a>
+                        <a href="mailto:info@softcodec.com">info@softcodec.com</a>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SoftCodec. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/services-cards.js"></script>
+    <script src="js/chatbot-loader.js"></script>
+</body>
+</html>

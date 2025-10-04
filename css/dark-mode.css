@@ -1,0 +1,61 @@
+/* 
+ * SoftCodec Dark Mode Styles
+ */
+
+body.dark-mode {
+    --bg-color: #0F172A;
+    --text-color: #E2E8F0;
+    --text-light: #94A3B8;
+    --card-bg: rgba(30, 41, 59, 0.8);
+    --border-color: rgba(51, 65, 85, 0.5);
+    --navbar-bg: rgba(15, 23, 42, 0.8);
+    
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark-mode .theme-toggle .fa-moon {
+    display: none;
+}
+
+.dark-mode .theme-toggle .fa-sun {
+    display: inline-block;
+}
+
+.dark-mode .mobile-menu-toggle span {
+    background-color: var(--text-color);
+}
+
+.dark-mode .footer {
+    background-color: #1E293B;
+}
+
+.dark-mode .services-snapshot,
+.dark-mode .testimonials {
+    background-color: rgba(15, 23, 42, 0.5);
+}
+
+.dark-mode .service-card:before {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(6, 182, 212, 0.1));
+}
+
+.dark-mode .client-logo {
+    filter: grayscale(100%) brightness(1.5);
+}
+
+.dark-mode .client-logo:hover {
+    filter: grayscale(0) brightness(1.5);
+}
+
+.dark-mode .preloader {
+    background-color: var(--bg-color);
+}
+
+.dark-mode .social-icons a {
+    background-color: rgba(20, 184, 166, 0.2);
+}
+
+.dark-mode .service-card,
+.dark-mode .testimonial-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}

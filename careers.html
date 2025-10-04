@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - SoftCodec</title>
+    <meta name="description" content="Join the SoftCodec team and work on innovative technology solutions. Explore our current job openings and career opportunities.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/Logo/Fav Icon.png" type="image/png" sizes="96x96">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body class="light-mode">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="Assets/Logo/Icon.png" alt="SoftCodec Logo">
+                <span>SoftCodec</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="careers.html" class="active">Careers</a>
+               
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header careers-header">
+        <div class="container">
+            <h1>Join Our Team</h1>
+            <p>Build your career with us and help shape the future of technology</p>
+        </div>
+    </section>
+
+    <!-- Why Join Us -->
+    <section class="why-join-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Join SoftCodec?</h2>
+                <p>Be part of a team that values innovation, growth, and excellence</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Work on cutting-edge projects using the latest technologies and methodologies.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Growth</h3>
+                    <p>Continuous learning opportunities and clear career progression paths.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Work-Life Balance</h3>
+                    <p>Flexible working hours and remote work options to support your lifestyle.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaborative Culture</h3>
+                    <p>A supportive team environment that encourages creativity and collaboration.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Impact</h3>
+                    <p>Work on projects that make a difference and impact users worldwide.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Recognition</h3>
+                    <p>Your contributions are valued and recognized through various reward programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Openings -->
+    <section class="current-openings">
+        <div class="container">
+            <div class="section-header">
+                <h2>Current Openings</h2>
+                <p>Explore our available positions and find your perfect role</p>
+            </div>
+            <div class="job-filter">
+                <button class="job-filter-btn active" data-filter="all">All Departments</button>
+                <button class="job-filter-btn" data-filter="development">Development</button>
+                <button class="job-filter-btn" data-filter="design">Design</button>
+                <button class="job-filter-btn" data-filter="marketing">Marketing</button>
+                <button class="job-filter-btn" data-filter="management">Management</button>
+            </div>
+            <div class="job-cards">
+                <!-- Job 1 -->
+                <div class="job-card" data-category="development">
+                    <div class="job-card-header">
+                        <h3>Senior Full Stack Developer</h3>
+                        <span class="job-type">Full-time</span>
+                    </div>
+                    <div class="job-card-body">
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Remote / New York</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$90K - $120K</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-briefcase"></i>
+                                <span>5+ years experience</span>
+                            </div>
+                        </div>
+                        <p>We're looking for an experienced Full Stack Developer to join our team and help build innovative web applications using modern technologies.</p>
+                        <div class="job-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                    </div>
+                    <div class="job-card-footer">
+                        <a href="#" class="btn btn-primary apply-btn">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="job-card" data-category="design">
+                    <div class="job-card-header">
+                        <h3>UI/UX Designer</h3>
+                        <span class="job-type">Full-time</span>
+                    </div>
+                    <div class="job-card-body">
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>San Francisco</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$80K - $110K</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-briefcase"></i>
+                                <span>3+ years experience</span>
+                            </div>
+                        </div>
+                        <p>Join our design team to create beautiful, intuitive interfaces for web and mobile applications that delight users and solve complex problems.</p>
+                        <div class="job-skills">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">Prototyping</span>
+                            <span class="skill-tag">User Research</span>
+                        </div>
+                    </div>
+                    <div class="job-card-footer">
+                        <a href="#" class="btn btn-primary apply-btn">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="job-card" data-category="marketing">
+                    <div class="job-card-header">
+                        <h3>Digital Marketing Specialist</h3>
+                        <span class="job-type">Full-time</span>
+                    </div>
+                    <div class="job-card-body">
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Chicago / Remote</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$65K - $85K</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-briefcase"></i>
+                                <span>2+ years experience</span>
+                            </div>
+                        </div>
+                        <p>We're seeking a Digital Marketing Specialist to develop and implement marketing strategies that increase our brand awareness and drive customer acquisition.</p>
+                        <div class="job-skills">
+                            <span class="skill-tag">SEO</span>
+                            <span class="skill-tag">SEM</span>
+                            <span class="skill-tag">Social Media</span>
+                            <span class="skill-tag">Analytics</span>
+                        </div>
+                    </div>
+                    <div class="job-card-footer">
+                        <a href="#" class="btn btn-primary apply-btn">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="job-card" data-category="development">
+                    <div class="job-card-header">
+                        <h3>Mobile App Developer</h3>
+                        <span class="job-type">Full-time</span>
+                    </div>
+                    <div class="job-card-body">
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Austin / Remote</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$85K - $115K</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-briefcase"></i>
+                                <span>3+ years experience</span>
+                            </div>
+                        </div>
+                        <p>Join our mobile development team to build innovative, high-performance mobile applications for iOS and Android platforms.</p>
+                        <div class="job-skills">
+                            <span class="skill-tag">Swift</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Flutter</span>
+                        </div>
+                    </div>
+                    <div class="job-card-footer">
+                        <a href="#" class="btn btn-primary apply-btn">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job 5 -->
+                <div class="job-card" data-category="management">
+                    <div class="job-card-header">
+                        <h3>Project Manager</h3>
+                        <span class="job-type">Full-time</span>
+                    </div>
+                    <div class="job-card-body">
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Boston</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$90K - $120K</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-briefcase"></i>
+                                <span>4+ years experience</span>
+                            </div>
+                        </div>
+                        <p>We're looking for an experienced Project Manager to lead cross-functional teams and ensure the successful delivery of complex software projects.</p>
+                        <div class="job-skills">
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Scrum</span>
+                            <span class="skill-tag">JIRA</span>
+                            <span class="skill-tag">Risk Management</span>
+                        </div>
+                    </div>
+                    <div class="job-card-footer">
+                        <a href="#" class="btn btn-primary apply-btn">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job 6 -->
+                <div class="job-card" data-category="development">
+                    <div class="job-card-header">
+                        <h3>DevOps Engineer</h3>
+                        <span class="job-type">Full-time</span>
+                    </div>
+                    <div class="job-card-body">
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Remote</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$95K - $130K</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-briefcase"></i>
+                                <span>3+ years experience</span>
+                            </div>
+                        </div>
+                        <p>Join our DevOps team to build and maintain our cloud infrastructure, automate deployment processes, and ensure the reliability and scalability of our systems.</p>
+                        <div class="job-skills">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="job-card-footer">
+                        <a href="#" class="btn btn-primary apply-btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="application-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Application Process</h2>
+                <p>What to expect when you apply for a position at SoftCodec</p>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>1. Application</h3>
+                        <p>Submit your resume and cover letter through our online application system.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>2. Initial Screening</h3>
+                        <p>Our HR team will review your application and conduct a brief phone interview.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>3. Technical Assessment</h3>
+                        <p>Complete a technical assessment or coding challenge relevant to the position.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>4. Team Interview</h3>
+                        <p>Meet with the team you'll be working with to discuss your experience and approach.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>5. Final Interview</h3>
+                        <p>A final interview with senior management to discuss your fit with the company.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>6. Offer</h3>
+                        <p>If successful, you'll receive a job offer with details about compensation and benefits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- No Positions Section -->
+    <section class="no-positions">
+        <div class="container">
+            <div class="no-positions-content">
+                <h2>Don't See a Position That Fits?</h2>
+                <p>We're always looking for talented individuals to join our team. Send us your resume and we'll keep it on file for future opportunities.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="Assets/Logo/Icon.png" alt="SoftCodec Logo">
+                    <h3>SoftCodec</h3>
+                    <p>Innovating the Future with Technology</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="careers.html">Careers</a>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Contact</h4>
+                        <a href="contact.html">Get in Touch</a>
+                        <a href="mailto:info@softcodec.com">info@softcodec.com</a>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SoftCodec. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/careers.js"></script>
+    <script src="js/chatbot-loader.js"></script>
+</body>
+</html>

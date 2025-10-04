@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="50">
+  <style>
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+    .lahore { fill: #006600; }
+    .tech { fill: #333333; }
+    .tagline { font-size: 10px; fill: #7f8c8d; }
+  </style>
+  <g transform="translate(10, 30)">
+    <text class="text lahore" font-size="18">Lahore</text>
+    <text class="text tech" font-size="18" x="70">Tech</text>
+    <text class="tagline" x="25" y="15">Innovation Hub</text>
+    <path d="M10,-15 L20,-15 L25,-10 L25,0 L10,0 L10,-15" fill="none" stroke="#006600" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="50">
+  <style>
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+    .euro { fill: #3498db; }
+    .systems { fill: #2c3e50; }
+    .tagline { font-size: 10px; fill: #7f8c8d; }
+  </style>
+  <g transform="translate(10, 30)">
+    <text class="text euro" font-size="18">Euro</text>
+    <text class="text systems" font-size="18" x="50">Systems</text>
+    <text class="tagline" x="15" y="15">Digital Innovation</text>
+    <circle cx="15" cy="-10" r="10" fill="none" stroke="#3498db" stroke-width="2"/>
+    <circle cx="15" cy="-10" r="5" fill="none" stroke="#3498db" stroke-width="1"/>
+  </g>
+</svg>

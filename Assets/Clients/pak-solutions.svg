@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="50">
+  <style>
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+    .pak { fill: #006600; }
+    .solutions { fill: #333333; }
+    .tagline { font-size: 10px; fill: #7f8c8d; }
+  </style>
+  <g transform="translate(10, 30)">
+    <text class="text pak" font-size="18">Pak</text>
+    <text class="text solutions" font-size="18" x="40">Solutions</text>
+    <text class="tagline" x="25" y="15">Tech Excellence</text>
+    <polygon points="15,-20 25,-10 15,0 5,-10" fill="none" stroke="#006600" stroke-width="2"/>
+  </g>
+</svg>

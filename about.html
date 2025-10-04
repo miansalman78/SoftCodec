@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SoftCodec</title>
+    <meta name="description" content="Learn about SoftCodec, our mission, vision, values, and the talented team behind our innovative technology solutions.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/Logo/Fav Icon.png" type="image/png" sizes="96x96">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/about-custom.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body class="light-mode">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="Assets/Logo/Icon.png" alt="SoftCodec Logo">
+                <span>SoftCodec</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Get to know the team behind SoftCodec and our mission to innovate the future</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Who We Are</h2>
+                    <p>SoftCodec is a premier software development company dedicated to creating innovative digital solutions that drive business success. Founded in 2015, we've grown from a small team of passionate developers to a full-service technology partner for businesses worldwide.</p>
+                    <p>Our team combines technical expertise with creative thinking to deliver custom software solutions that solve complex business challenges. We believe in building long-term partnerships with our clients, understanding their unique needs, and delivering solutions that exceed expectations.</p>
+                    <p>With a focus on quality, innovation, and client satisfaction, SoftCodec has established itself as a trusted name in the software development industry.</p>
+                </div>
+                <div class="about-illustration" id="about-3d"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Values -->
+    <section class="mvv-section">
+        <div class="container">
+            <div class="mvv-grid">
+                <div class="mvv-card">
+                    <div class="mvv-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses through innovative technology solutions that drive growth, efficiency, and competitive advantage.</p>
+                </div>
+                <div class="mvv-card">
+                    <div class="mvv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be the global leader in creating transformative digital experiences that shape the future of industries worldwide.</p>
+                </div>
+                <div class="mvv-card">
+                    <div class="mvv-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <ul class="values-list">
+                        <li><span>Innovation</span> - We embrace new ideas and technologies</li>
+                        <li><span>Excellence</span> - We strive for the highest quality in everything we do</li>
+                        <li><span>Integrity</span> - We operate with honesty and transparency</li>
+                        <li><span>Collaboration</span> - We believe in the power of teamwork</li>
+                        <li><span>Client-Centric</span> - We put our clients' needs first</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Section -->
+    <section class="ceo-section">
+        <div class="container">
+            <div class="ceo-container">
+                <div class="ceo-image">
+                    <img src="Assets/Owner/WhatsApp Image 2025-09-18 at 20.01.15_b2b12410.jpg" alt="Salman Shoukat">
+                </div>
+                <div class="ceo-content">
+                    <h2>Our Leadership</h2>
+                    <h3>Salman Shoukat</h3>
+                    <p class="ceo-position">CEO & Founder</p>
+                    <p class="ceo-bio">With over 3 years of experience in software development and business leadership, Salman Shoukat has established SoftCodec as a leading technology solutions provider. His visionary approach and deep technical expertise have guided our company through significant growth and innovation.</p>
+                    <p class="ceo-bio">Salman's leadership philosophy centers on fostering creativity, embracing cutting-edge technologies, and building lasting client relationships. Under his guidance, SoftCodec has successfully delivered over 30 projects across various industries, earning recognition for excellence in software development.</p>
+                    <p class="ceo-bio">Before founding SoftCodec, Salman held leadership positions at several tech giants where he honed his skills in strategic planning and team management. He holds a Master's degree in Computer Science and is passionate about mentoring the next generation of tech leaders.</p>
+                    <div class="ceo-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Team</h2>
+                <p>The talented professionals behind SoftCodec's success</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Assets/Team/Muhammad Behram Hassan.jpg" alt="Muhammad Behram Hassan">
+                    </div>
+                    <div class="member-info">
+                        <h3>Muhammad Behram Hassan</h3>
+                        <p class="member-position">CTO</p>
+                        <p class="member-bio">Behram leads our technical strategy and innovation initiatives, bringing extensive experience in emerging technologies and software architecture.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Assets/Team/Muhammad Ahmad.jpg" alt="Muhammad Ahmad">
+                    </div>
+                    <div class="member-info">
+                        <h3>Muhammad Ahmad</h3>
+                        <p class="member-position">Lead Developer</p>
+                        <p class="member-bio">Ahmad leads our development team, ensuring high-quality code and innovative solutions for our clients' most challenging problems.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Assets/Team/Muhammad Usman.jpg" alt="Muhammad Usman">
+                    </div>
+                    <div class="member-info">
+                        <h3>Muhammad Usman</h3>
+                        <p class="member-position">Full Stack Developer</p>
+                        <p class="member-bio">Usman specializes in full stack development, creating seamless and efficient solutions from front-end to back-end for our clients.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Assets/Team/Abdullah Waseem.jpg" alt="Abdullah Waseem">
+                    </div>
+                    <div class="member-info">
+                        <h3>Abdullah Waseem</h3>
+                        <p class="member-position">App Developer</p>
+                        <p class="member-bio">Abdullah creates innovative mobile applications that deliver exceptional user experiences across iOS and Android platforms.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Assets/Team/zumar choudhary.jpeg" alt="Umar">
+                    </div>
+                    <div class="member-info">
+                        <h3>Umar</h3>
+                        <p class="member-position">ML/AI Developer</p>
+                        <p class="member-bio">Umar specializes in machine learning and artificial intelligence, developing intelligent solutions that transform data into actionable insights.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Assets/Team/Aiza.jpg" alt="Aiza Humayun">
+                    </div>
+                    <div class="member-info">
+                        <h3>Aiza Humayun</h3>
+                        <p class="member-position">UI/UX Developer</p>
+                        <p class="member-bio">Aiza creates beautiful and intuitive user interfaces, focusing on enhancing user experience through thoughtful design and functionality.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Assets/Team/Isha Hassan.jpeg" alt="Isha Hassan">
+                    </div>
+                    <div class="member-info">
+                        <h3>Isha Hassan</h3>
+                        <p class="member-position">Graphic Designer</p>
+                        <p class="member-bio">Isha brings creativity and artistic vision to our projects, creating stunning visual assets that elevate our clients' brand identities.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Assets/Team/Fatima Noor.jpeg" alt="Fatima Noor">
+                    </div>
+                    <div class="member-info">
+                        <h3>Fatima Noor</h3>
+                        <p class="member-position">Digital Marketing</p>
+                        <p class="member-bio">Fatima develops and implements effective digital marketing strategies that increase brand visibility and drive engagement for our clients.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Assets/Team/zumar choudhary.jpeg" alt="Zumar Choudhary">
+                    </div>
+                    <div class="member-info">
+                        <h3>Zumar Choudhary</h3>
+                        <p class="member-position">QA & Testing</p>
+                        <p class="member-bio">Zumar ensures the quality and reliability of our software through comprehensive testing and quality assurance processes.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="30">0</div>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="16">0</div>
+                    <p>Team Members</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="11">0</div>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Work With Us?</h2>
+                <p>Let's discuss how our team can help bring your ideas to life</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="Assets/Logo/Icon.png" alt="SoftCodec Logo">
+                    <h3>SoftCodec</h3>
+                    <p>Innovating the Future with Technology</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="careers.html">Careers</a>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <h4>Contact</h4>
+                        <a href="contact.html">Get in Touch</a>
+                        <a href="mailto:info@softcodec.com">info@softcodec.com</a>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SoftCodec. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/about-3d.js"></script>
+    <script src="js/chatbot-loader.js"></script>
+</body>
+</html>
