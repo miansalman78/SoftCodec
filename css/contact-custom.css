@@ -10,6 +10,7 @@ html, body {
 
 body {
     -webkit-overflow-scrolling: touch;
+    overflow-y: auto !important;
 }
 
 .content-wrapper {
@@ -17,6 +18,25 @@ body {
     width: 100%;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto !important;
+        position: static !important;
+        height: auto !important;
+    }
+    
+    .content-wrapper {
+        overflow-y: visible !important;
+        position: static !important;
+        height: auto !important;
+    }
+    
+    html {
+        height: auto !important;
+    }
 }
 
 /* Page Header */

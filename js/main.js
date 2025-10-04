@@ -87,6 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const slideCount = testimonialCards.length;
     
     function goToSlide(index) {
+        if (!testimonialSlider) return; // Check if slider exists
+        
         if (index < 0) {
             index = slideCount - 1;
         } else if (index >= slideCount) {
@@ -103,8 +105,10 @@ document.addEventListener('DOMContentLoaded', function() {
         currentSlide = index;
     }
     
-    // Initialize slider
-    goToSlide(0);
+    // Initialize slider only if elements exist
+    if (testimonialSlider) {
+        goToSlide(0);
+    }
     
     // Event listeners for controls
     prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
