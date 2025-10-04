@@ -1,5 +1,24 @@
 /* Contact Page Custom Styling */
 
+/* Fix for mobile scrolling */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+body {
+    -webkit-overflow-scrolling: touch;
+}
+
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 /* Page Header */
 .contact-header {
     background: linear-gradient(135deg, #2a2a72 0%, #009ffd 100%);
@@ -46,6 +65,30 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 20px;
+}
+
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+    body {
+        overflow-y: scroll !important;
+        position: static !important;
+        height: 100% !important;
+    }
+    
+    .floating-3d-model {
+        height: 40vh !important;
+        position: relative !important;
+    }
+    
+    .content-wrapper {
+        overflow-y: visible !important;
+        position: static !important;
+        height: auto !important;
+    }
+    
+    html {
+        height: auto !important;
+    }
 }
 
 .contact-card {
